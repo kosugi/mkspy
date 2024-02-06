@@ -1,3 +1,5 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+
 use iced::widget::Text;
 use iced::{executor, time, window, Application, Command, Element, Font, Settings, Theme};
 
