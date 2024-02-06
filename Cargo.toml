@@ -1,0 +1,21 @@
+[package]
+name = "rwinapi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.33"
+
+[dependencies.iced]
+version = "0.10.0"
+features = ["smol"]
+
+[dependencies.windows]
+version = "0.52.0"
+features = [
+    "System",
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
